@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
 body,
 html {
@@ -11,104 +12,142 @@ html {
   border: 0px;
   box-sizing: border-box;
 }
- 
-header{
-    margin-top: 20px;
-    width: 100%;
-    display: flex;
-    /* position: absolute ; */
+ /* Header */
+ header{
+     margin-top: 20px;
+     width: 100%;
+     display: flex;
+    position: absolute ;
     z-index: 1;
     top: 0px;
     left: 0;
-    background: blueviolet;
+    background: rgba(255, 255, 255, 0.233);
     justify-content: space-between;
     max-height:120px ;
     height:120px ;
-
+    
 }
+
+@media (max-width: 700px){
+    
+    header {
+        flex-direction: column;
+        
+    }
+} 
 
 .logomarca :hover{
     width: 300px;
 }
 
+.navegacao{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}   
 .navegacao a{
-  color: rgb(26, 23, 23); 
-  text-decoration: none;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 30px; 
-  background: blue;
+    color: rgb(255, 255, 255); 
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px; 
+    margin: 0px 5px;
+
+}
+
+.navegacao a:hover{
+    color: black;
 }
 
 @media (max-width: 700px){
-  
-    .navegacao a{
-    display: none;
     
- }
+    .navegacao a{
+        display: none;
+        
+    }
 }
+/* Pagina 1 */
 
-.background {
+.main-pagina1 {
     display: flex;
-    /* position: absolute; */
-    width: 100%;
-    height: 120vh;
+    min-height: 100%;
+    width: 130%;
+    min-height: 100% ;
     background-image: url(../imagens/planodefunto01.jpeg) ;
-    background-size: 140%;
-    background-position-y: -190px;
-    background-position-x: -20px;
+    background-size: cover;
     background-repeat: no-repeat;
+    justify-content: flex-start;
+    align-items:center;
     opacity: 0.9;
-  
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Mochiy Pop One', sans-serif; */
+}  
 
-}
+@media (min-width: 1120px){
+    .main-pagina1 {
+        background-position-y: -200px;
+        
+    }
+}   
+
 .conteudo_main{
-    margin: 300px 0px 0px 100px;
     height: 500px;
     width: 500px;
-    /* padding: 300px 0px 0px 100px; */
     font-size: 2rem;
-    background: brown;
-
-}
-.titulodisponivelpadocao{
-    width: 100%;
-    height: 80px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: royalblue;
+    margin-left: 150px;
+    margin-top: 250px;
+    color: white;
 }
 
+/* MOBILE PAGINA 1*/
+@media (max-width: 360px){
+    .conteudo_main{
+        margin: 0;
+        text-align: center;
+        font-size: 25px;
+        width: 100vw;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+/*  PAGINA 2*/
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(207, 98, 117), blueviolet)
-}
+    padding-bottom: 50px;
+    background: linear-gradient(rgb(94, 94, 94), rgb(14, 14, 14));
+    border-top:rgb(14, 14, 14);
+    
+}   
 
-.animal1{
-    background: orangered;
-}
-.animal{
-    margin:0px;
+.titulodisponivelpadocao{
     width: 100%;
-    background: yellowgreen;
-    border-top: 4px solid grey;
+    height: 80px;
+    font-size: 60px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-}
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mochiy Pop One', sans-serif;
+}   
 
-.caixaanimal{
-    margin-top: 100px;
+
+
+.card{
+    margin-top: 40px;
     height: 250px;
     width: 80%;
     flex-direction: row;
     justify-content: space-around;
     display: flex;
-    background: green;
     border-radius: 20px;
     border: 3px solid rgba(0, 0, 0, 0.394);
+    background-color: rgba(138, 141, 141, 0.521);
 
 }
 .caixanomefoto{
@@ -117,86 +156,95 @@ section{
     margin-left: 80px;
     display: flex;
     flex-direction: column;
-
     align-items: center;
-    background: rgb(70, 70, 207);
-}
-
-.caixadescricao{
-    width: max-content;
-    height: 220px;
-    flex-direction: column;
-    font-size: 40px;
-
-    background: rgb(79, 88, 53);
+    
 }
 
 .nomedog{
     font-size: 35px;
-    background: rebeccapurple;
+    margin: 10px;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .fotodog{
-   
     width: 150px;
     height: 150px;
     border-radius: 150px;
-    /* margin-top: 5px; */
+    margin-bottom: 10px;
+    border: 4px solid rgba(0, 0, 0, 0.582);
+   
+}       
 
-    /* margin-right: 80px; */
-
-    background: goldenrod;
+.caixadescricao{
+    flex-direction: column;
+    font-size: 37px;
+    list-style: none;
+    
 }
 
+.caixadescricao li{
+    color: rgb(22, 22, 22);
+    margin-right: 100px;
+    font-family: 'Varela Round', sans-serif;
+}
 
+/* MOBILE PAGINA 2*/
+@media (max-width: 360px){
+    .card{
+        height: 600px;
+        flex-direction: column;
+        align-items: center; 
+        align-items: center; 
+    }
+    .caixanomefoto{
+        margin: 0;
+    }
+    .caixadescricao{
+        height: 250px;
+        font-size: 30px;
+        
+    }
+    .caixadescricao li{
+     margin: 0;
+     text-align: start;
+    }
+}
 
-/* {
-    width: 100vw;
-    height: 10vh;
-    background-color: #f7f7f762;
-    padding: 20px 20px 20px 0px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-    
-} */
-
-/* #barranavegacao .logomarca{
-    color: yellow;
-    font-family: 'Fredoka One', cursive;
-    font-size: 50px;
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    transition: 0.5s;
-    
-} */
 
 footer{
+   
     display: flex;
     flex-direction: row;
-}
-
-
-
-.navegacao{
-    width: 700px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    justify-content: space-around;
-}
-
-
-
-
-@media (max-width: 700px){
-  
-  header {
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.609);  
+    width: 100%;
+    margin-top: 50px;
     
- }
+   justify-content: space-around;
 }
+
+@media (max-width: 360px){
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .logorodape{
+        width: 160px;
+        height: 70px;
+
+    }
+
+    .descricaorodape{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
 

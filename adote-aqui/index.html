@@ -1,140 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Me Adote</title>
-</head>
-<body>
-
+  </head>
+  <body>
+    <!-------------------------------- Header -------------------------------------->
     <header>
-        
-            <a class= logomarca href="#">
-                <img src="../imagens/logomarcadog.png" alt="logo">
-            </a>  
-                
+      <a class="logomarca" href="#">
+        <img src="../imagens/logomarcadog.png" alt="logo" />
+      </a>
 
-            
-                <nav class="navegacao" >
-                    <a href="#">Inicio</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Galeria</a>
-                    <a href="#">Colabore</a>
-                    <a href="#">Contato</a>
-                </nav>
-        
+      <nav class="navegacao">
+        <a href="#">Inicio</a>
+        <a href="#">Sobre</a>
+        <a href="#">Galeria</a>
+        <a href="#">Colabore</a>
+        <a href="#">Contato</a>
+      </nav>
     </header>
-    <main class="background">
-        <div class="conteudo_main">
-        <h1> É HOJE!!</h1>
-        <h2> Hojé é o dia de você encontrar o seu melhor amigo.</h2>
-        </div>
+    <!-------------------------------- Main Pg1 -------------------------------------->
+
+    <main class="main-pagina1">
+      <div class="conteudo_main">
+        <h1>É HOJE!!</h1>
+        <h2>Hojé é o dia de você encontrar o seu melhor amigo.</h2>
+      </div>
     </main>
 
+    <!-------------------------------- Bloco -------------------------------------->
 
-    <div class="titulodisponivelpadocao">
-        <h1> Disponíveis para adoção</h1>
-    </div>
+    <section>
+      <h1 class="titulodisponivelpadocao">Disponíveis para adoção</h1>
 
+      <card class="card">
+        <div class="caixanomefoto">
+          <h1 class="nomedog" title="nome do cachorro">Fred</h1>
+          <img
+            class="fotodog"
+            src="../imagens/dog1.jpeg"
+            alt="imagem cachorro caramelo feliz"
+          />
+        </div>
 
-<section>
-       
-    <div class="animal1">
+        <ul class="caixadescricao">
+          <li>Idade: 08 meses</li>
+          <li>Sexo: Macho</li>
+          <li>Porte: Médio</li>
+          <li>Pelagem: Curta</li>
+        </ul>
+      </card>
 
-        <div class="caixaanimal">
+      <card class="card">
+        <div class="caixanomefoto">
+          <h1 class="nomedog" title="nome do cachorro">Bob</h1>
+          <img
+            class="fotodog"
+            src="../imagens/dog2.jpg"
+            alt="imagem puddle branco feliz"
+          />
+        </div>
 
-            <div class="caixanomefoto">
-            <h1 class="nomedog">Fred</h1>
-            <img class="fotodog" src="../imagens/dog1.jpeg" alt="dog1">
+        <ul class="caixadescricao">
+          <li>Idade: 12 meses</li>
+          <li>Sexo: Macho</li>
+          <li>Porte: Médio</li>
+          <li>Pelagem: Curta</li>
+        </ul>
+      </card>
 
-        </div >
+      <card class="card">
+        <div class="caixanomefoto">
+          <h1 class="nomedog" title="nome do cachorro">Belinha</h1>
+          <img
+            class="fotodog"
+            src="../imagens/dog3.jpeg"
+            alt="imagem vira-lata preto feliz"
+          />
+        </div>
 
+        <ul class="caixadescricao">
+          <li>Idade: 09 meses</li>
+          <li>Sexo: Fêmea</li>
+          <li>Porte: Médio</li>
+          <li>Pelagem: Curta</li>
+        </ul>
+      </card>
 
-        <div class="caixadescricao">
-             <ul>
-                <li> Idade: 08 meses </li>
-                <li> Sexo: Fêmea</li>
-                <li> Porte: Médio</li>
-                <li> Pelagem: Curta </li>
-             </ul>  
+      <!-------------------------------- Footer -------------------------------------->
+      <footer>
+        <img
+          class="logorodape"
+          src="../imagens/logomarcadog.png"
+          alt="logodog"
+        />
 
-        </div>       
-                
-            
-        
-    </div>
-
-
-
-
-
-    <div class="animal2">
-
-        <div class="caixaanimal">
-
-            <div class="caixanomefoto">
-            <h1 class="nomedog">Bob</h1>
-            <img class="fotodog" src="../imagens/dog2.jpg" alt="dog1">
-
-        </div >
-
-
-        <div class="caixadescricao">
-             <ul>
-                <li> Idade: 08 meses </li>
-                <li> Sexo: Fêmea</li>
-                <li> Porte: Médio</li>
-                <li> Pelagem: Curta </li>
-             </ul>  
-
-        </div>       
-                
-            
-        
-    </div>
-
-
-
-    <div class="animal3">
-
-        <div class="caixaanimal">
-
-            <div class="caixanomefoto">
-            <h1 class="nomedog">Belinha</h1>
-            <img class="fotodog" src="../imagens/dog3.jpeg" alt="dog1">
-
-        </div >
-
-
-        <div class="caixadescricao">
-             <ul>
-                <li> Idade: 08 meses </li>
-                <li> Sexo: Fêmea</li>
-                <li> Porte: Médio</li>
-                <li> Pelagem: Curta </li>
-             </ul>  
-
-        </div>       
-                
-            
-        
-    </div> 
+        <div descricaorodape>
+          <h2>Não compre animais, adote!</h2>
+          <h3>
+            Rua 1º de Maio, 165 - Vila Boa Vista <br />
+            CEP: 32.186-429 - Contagem / MG
+          </h3>
+        </div>
+      </footer>
     </section>
-<footer>
-    <div>
-        <img src="../imagens/logomarcadog.png" alt="logodog">
-    </div>
-
-    <div>
-        <h2>Não compre animais, adote! </h2>
-        <h3>Rua 1º de Maio, 165 - Bairro Vila Boa Vista -
-            CEP: 32.186-429 - Contagem / MG</h3>
-    </div>
-   
-</footer>
-
-</body>
+  </body>
 </html>
